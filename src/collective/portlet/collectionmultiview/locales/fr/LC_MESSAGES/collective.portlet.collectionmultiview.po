@@ -16,69 +16,69 @@ msgstr ""
 
 #: ./collectionmultiview.py:151
 msgid "Add CollectionMultiView portlet"
-msgstr ""
+msgstr "Ajouter une portlet CollectionMultiView"
 
 #: ./collectionmultiview.py:202
 msgid "Edit CollectionMultiView portlet"
-msgstr ""
+msgstr "Modifier la portlet CollectionMultiView"
 
 #: ./collectionmultiview.py:33
 msgid "Find the collection which provides the items to list"
-msgstr ""
+msgstr "Trouver la collection qui fournira les éléments à lister"
 
 #: ./renderers/default.py:12
 msgid "If enabled, a more... link will appear in the footer of the portlet, linking to the underlying Collection."
-msgstr ""
+msgstr "Si activé, un lien 'plus...' s'affichera en pied du portlet, avec un lien vers la collection"
 
 #: ./renderers/default.py:19
 msgid "If enabled, effective dates will be shown underneath the items listed."
-msgstr ""
+msgstr "Si activé, les dates de publication seront affichés"
 
 #: ./collectionmultiview.py:47
 msgid "If enabled, items will be selected randomly from the collection, rather than based on its sort order."
-msgstr ""
+msgstr "Si activé, les éléments seront affichés dans un ordre aléatoire"
 
 #: ./collectionmultiview.py:40
 msgid "Limit"
-msgstr ""
+msgstr "Limite"
 
 #: ./collectionmultiview.py:27
 msgid "Portlet header"
-msgstr ""
+msgstr "Titre du portlet"
 
 #: ./collectionmultiview.py:51
 msgid "Renderer"
-msgstr ""
+msgstr "Renderer"
 
 #: ./collectionmultiview.py:46
 msgid "Select random items"
-msgstr ""
+msgstr "Ordre aléatoire des éléments"
 
 #: ./renderers/default.py:18
 msgid "Show dates"
-msgstr ""
+msgstr "Afficher les dates"
 
 #: ./renderers/default.py:11
 msgid "Show more... link"
-msgstr ""
+msgstr "Afficher le lien 'plus...'"
 
 #: ./collectionmultiview.py:41
 msgid "Specify the maximum number of items to show in the portlet. Leave this blank to show all items."
-msgstr ""
+msgstr "Spécifie le nombre maximum d'éléments à afficher dans le portlet. Laisser vide pour afficher tous les éléments."
 
 #: ./collectionmultiview.py:32
 msgid "Target collection"
-msgstr ""
+msgstr "Collection cible"
 
 #: ./collectionmultiview.py:52
 msgid "The name of the Renderer for this portlet."
-msgstr ""
+msgstr "Le nom du Renderer utilisé pour cette portlet."
 
 #: ./collectionmultiview.py:152
 msgid "This portlet displays a listing of items from a Collection, using custom views"
-msgstr ""
+msgstr "Cette portlet affiche une liste d'éléments provenant d'une collection et utilisant des vues personnalisées"
 
 #: ./collectionmultiview.py:28
 msgid "Title of the rendered portlet"
-msgstr ""
+msgstr "Titre qui sera affiché sur la portlet"
 
