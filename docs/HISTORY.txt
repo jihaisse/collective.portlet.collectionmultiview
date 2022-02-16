@@ -4,7 +4,10 @@ Changelog
 2.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- hexagonit portlet style compatibility [jihaisse]
+- The text field is now a WYSIWYGWidget [jihaisse]
+- No limit on collections listed [jihaisse]
+- French and English translations [jihaisse]
 
 
 2.2 (2013-05-15)
