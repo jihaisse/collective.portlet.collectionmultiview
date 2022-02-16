@@ -1,3 +1,4 @@
+from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
 from zope.interface import implements
 from zope.component import getAdapter
 
@@ -138,6 +139,10 @@ class AddForm(base.AddForm):
         fields = form.Fields(schema)
         fields['target_collection'].custom_widget = UberSelectionWidget
         fields['renderer'].custom_widget = RendererSelectWidget
+        try:
+            fields['text'].custom_widget = WYSIWYGWidget
+        except:
+            pass
         custom_widgets = get_custom_widgets(self.request)
         for field, widget in custom_widgets.items():
             fields[field].custom_widget = widget
@@ -181,6 +186,10 @@ class EditForm(base.EditForm):
         fields = form.Fields(schema)
         fields['target_collection'].custom_widget = UberSelectionWidget
         fields['renderer'].custom_widget = RendererSelectWidget
+        try:
+            fields['text'].custom_widget = WYSIWYGWidget
+        except:
+            pass
         custom_widgets = get_custom_widgets(
             self.request,
             self.context.renderer)
