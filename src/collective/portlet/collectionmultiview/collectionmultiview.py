@@ -138,6 +138,7 @@ class AddForm(base.AddForm):
         schema = get_extended_schema(self.request)
         fields = form.Fields(schema)
         fields['target_collection'].custom_widget = UberSelectionWidget
+        fields['target_collection'].custom_widget.limit_results = 0
         fields['renderer'].custom_widget = RendererSelectWidget
         try:
             fields['text'].custom_widget = WYSIWYGWidget
@@ -185,6 +186,7 @@ class EditForm(base.EditForm):
         schema = get_extended_schema(self.request, self.context.renderer)
         fields = form.Fields(schema)
         fields['target_collection'].custom_widget = UberSelectionWidget
+        fields['target_collection'].custom_widget.limit_results = 0
         fields['renderer'].custom_widget = RendererSelectWidget
         try:
             fields['text'].custom_widget = WYSIWYGWidget
