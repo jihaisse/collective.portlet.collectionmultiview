@@ -17,8 +17,10 @@ from collective.portlet.collectionmultiview.interfaces import (
 from plone.app.vocabularies.catalog import SearchableTextSourceBinder
 from collective.portlet.collectionmultiview.widget import RendererSelectWidget
 
+from hexagonit.portletstyle.interfaces import IPortletStyleDataProvider
 
-class ICollectionMultiView(IPortletDataProvider):
+
+class ICollectionMultiView(IPortletDataProvider, IPortletStyleDataProvider):
 
     header = schema.TextLine(
         title=_(u"Portlet header"),

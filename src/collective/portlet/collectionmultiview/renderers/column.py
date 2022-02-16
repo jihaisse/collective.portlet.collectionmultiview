@@ -1,5 +1,12 @@
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 from collective.portlet.collectionmultiview import BaseRenderer
+from collective.portlet.collectionmultiview.renderers.default import IDefaultSchema
+
+
+class IColumnRenderer(IDefaultSchema):
+    """
+
+    """
 
 
 class ColumnRenderer(BaseRenderer):
@@ -7,3 +14,4 @@ class ColumnRenderer(BaseRenderer):
 
     title = 'Column Renderer'
     template = ViewPageTemplateFile('templates/column.pt')
+    schema = IColumnRenderer

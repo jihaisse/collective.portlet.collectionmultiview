@@ -1,6 +1,7 @@
 <dl class="portlet portletCollection"
     i18n:domain="plone"
     tal:condition="view/results"
+    tal:attributes="class string:portlet portletCollection ${view/data/portlet_style}"
     tal:define="collection_url view/collection_url;
                 plone_view context/@@plone;
                 toLocalizedTime nocall:plone_view/toLocalizedTime;

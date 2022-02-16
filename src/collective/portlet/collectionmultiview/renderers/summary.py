@@ -1,5 +1,6 @@
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 from collective.portlet.collectionmultiview import BaseRenderer
+from collective.portlet.collectionmultiview.renderers.default import IDefaultSchema
 
 try:
     from plone.app.discussion.interfaces import IConversation, IDiscussionLayer
@@ -8,11 +9,18 @@ except ImportError:
     HAS_PAD = False
 
 
+class ISummaryRenderer(IDefaultSchema):
+    """
+
+    """
+
+
 class SummaryRenderer(BaseRenderer):
     """ display as a summary listing """
 
     title = 'Summary Renderer'
     template = ViewPageTemplateFile('templates/summary.pt')
+    schema = ISummaryRenderer
 
     def comment_count(self, obj):
         """
